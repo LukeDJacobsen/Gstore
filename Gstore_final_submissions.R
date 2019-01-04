@@ -13,6 +13,7 @@ by_visitor_min$total_spend_visitor <- ifelse(by_visitor_min$total_spend_visitor 
 by_visitor_min <- by_visitor_min %>% group_by(fullVisitorId) %>% mutate(mean_page_view = mean(totals.pageviews))
 
 by_visitor_min <- by_visitor_min %>% select(-date) %>% select(-totals.pageviews)
+
 by_visitor_min <- by_visitor_min %>% group_by(fullVisitorId) %>% mutate(numVisits = n())
 
 b <- ifelse(duplicated(by_visitor_min$fullVisitorId), by_visitor_min, NA)
