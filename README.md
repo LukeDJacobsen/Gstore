@@ -10,4 +10,4 @@ gstoreCV.R has code with the cross validation format I chose to use.
 
 Gstore_final_submissions.R creates the final Elastic Net model submitted to kaggle on all data in the test.csv.
 
-Files should be reproducable after downloading the raw data from kaggle.
+Code should be reproducable after downloading the raw data from kaggle.
